@@ -3,7 +3,6 @@
 
 #importing libraries
 import socket
-import sys
 import threading
 
 #server actions to client requests
@@ -225,6 +224,6 @@ except KeyboardInterrupt as ki:
     for username,client in clientusers.items():
         client.send("server shut down".encode())
     serv.close() #close socket
-    sys.exit(1)
+    
 
 
