@@ -4,7 +4,7 @@
 #importing libraries
 import socket
 import threading
-import sys
+
 
 #To receive messages from the server through socket instance "client"
 def receivemsgs(client):
@@ -118,5 +118,5 @@ finally:
     clientconnection = False
     client.shutdown(socket.SHUT_RDWR) #shutdown the RDWR of the socket.
     client.close()    #close socket
-    sys.exit(1)
+    
 
